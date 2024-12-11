@@ -7,7 +7,25 @@ document.querySelector('#push').onclick = function(){
     }
     else{
 
-        document.querySelector(".tasks").innerHTML
+        document.querySelector(".tasks").innerHTML += `
+        
+                        <div class="task">
+                            <span id="taskname">
+
+                                    ${document.querySelector('#newtask input').value}
+
+                            </span>
+                            <button class="delete">
+
+                                <i class="fa-solid fa-delete-left"></i>
+                            
+                            
+                            </button>    
+                            
+                        </div>      
+                      `;
+
+    
     }
         
 }
